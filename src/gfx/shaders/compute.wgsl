@@ -8,7 +8,7 @@ const corners = array<vec2<f32>, 4>(
     vec2(1.0, 1.0)   // G: Lower-right
 );
 
-@compute @workgroup_size(128)
+@compute @workgroup_size(64)
 fn computeSomething(
     @builtin(global_invocation_id) id: vec3<u32>
 ) {
